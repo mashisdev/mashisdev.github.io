@@ -5,71 +5,115 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --background: oklch(1 0 0); /* Blanco puro */
+  --foreground: oklch(0.145 0 0); /* Negro casi puro */
+
+  --card: oklch(1 0 0); /* Blanco para la tarjeta */
+  --card-foreground: oklch(0.145 0 0); /* Negro para el texto de la tarjeta */
+
+  --popover: oklch(1 0 0); /* Blanco para el popover */
+  --popover-foreground: oklch(0.145 0 0); /* Negro para el texto del popover */
+
+  /* Colores primarios (azules más oscuros para el modo claro) */
+  --primary: oklch(0.3 0.1 250); /* Un azul oscuro */
+  --primary-foreground: oklch(0.985 0 0); /* Texto casi blanco */
+
+  /* Colores secundarios (azules más claros para el modo claro) */
+  --secondary: oklch(0.9 0.05 240); /* Un azul claro/grisáceo */
+  --secondary-foreground: oklch(0.2 0.05 250); /* Texto azul oscuro */
+
+  /* Colores muted (tonos de gris azulado para el modo claro) */
+  --muted: oklch(0.95 0.02 240); /* Gris muy claro con un toque azul */
+  --muted-foreground: oklch(0.55 0.05 240); /* Gris medio con un toque azul */
+
+  /* Colores accent (azules para resaltar en el modo claro) */
+  --accent: oklch(0.9 0.05 240); /* Similar al secundario para acento sutil */
+  --accent-foreground: oklch(0.2 0.05 250); /* Texto azul oscuro para acento */
+
+  /* Color destructivo (rojo, se mantiene para la advertencia) */
+  --destructive: oklch(0.577 0.245 27.325); /* Rojo original */
+
+  /* Bordes y anillos (azules suaves para el modo claro) */
+  --border: oklch(0.85 0.03 240); /* Borde gris azulado claro */
+  --input: oklch(0.85 0.03 240); /* Input gris azulado claro */
+  --ring: oklch(0.6 0.08 250); /* Anillo azul medio */
+
+  /* Colores de gráficos (una gama de azules/cianes) */
+  --chart-1: oklch(0.65 0.15 250); /* Azul */
+  --chart-2: oklch(0.6 0.1 200); /* Cian azulado */
+  --chart-3: oklch(0.4 0.08 270); /* Azul más profundo */
+  --chart-4: oklch(0.83 0.1 220); /* Azul claro */
+  --chart-5: oklch(0.77 0.12 260); /* Azul medio */
+
+  /* Sidebar (para el modo claro) */
+  --sidebar: oklch(0.985 0 0); /* Casi blanco */
+  --sidebar-foreground: oklch(0.145 0 0); /* Casi negro */
+  --sidebar-primary: oklch(0.3 0.1 250); /* Azul oscuro */
+  --sidebar-primary-foreground: oklch(0.985 0 0); /* Texto casi blanco */
+  --sidebar-accent: oklch(0.9 0.05 240); /* Azul claro/grisáceo */
+  --sidebar-accent-foreground: oklch(0.2 0.05 250); /* Texto azul oscuro */
+  --sidebar-border: oklch(0.85 0.03 240); /* Borde azul suave */
+  --sidebar-ring: oklch(0.6 0.08 250); /* Anillo azul medio */
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: oklch(0.12 0.01 240); /* Fondo azul muy oscuro */
+  --foreground: oklch(0.985 0 0); /* Texto casi blanco */
+
+  --card: oklch(0.18 0.02 240); /* Tarjeta azul oscuro ligeramente más claro */
+  --card-foreground: oklch(0.985 0 0); /* Texto casi blanco */
+
+  --popover: oklch(0.18 0.02 240); /* Popover azul oscuro */
+  --popover-foreground: oklch(0.985 0 0); /* Texto casi blanco */
+
+  /* Colores primarios (azules claros para el modo oscuro) */
+  --primary: oklch(0.85 0.08 240); /* Un azul claro */
+  --primary-foreground: oklch(0.15 0.01 240); /* Texto azul muy oscuro */
+
+  /* Colores secundarios (grises azulados para el modo oscuro) */
+  --secondary: oklch(0.25 0.02 240); /* Un gris azulado oscuro */
+  --secondary-foreground: oklch(
+    0.95 0.01 240
+  ); /* Texto casi blanco con toque azul */
+
+  /* Colores muted (tonos de gris azulado más claros para el modo oscuro) */
+  --muted: oklch(0.25 0.02 240); /* Gris azulado oscuro */
+  --muted-foreground: oklch(0.7 0.05 240); /* Gris medio azulado */
+
+  /* Colores accent (azules para resaltar en el modo oscuro) */
+  --accent: oklch(0.25 0.02 240); /* Similar al secundario para acento sutil */
+  --accent-foreground: oklch(
+    0.95 0.01 240
+  ); /* Texto casi blanco con toque azul */
+
+  /* Color destructivo (rojo, se mantiene) */
+  --destructive: oklch(0.704 0.191 22.216); /* Rojo original */
+
+  /* Bordes y anillos (azules más saturados para el modo oscuro) */
+  --border: oklch(0.2 0.02 240); /* Borde azul oscuro sutil */
+  --input: oklch(0.22 0.03 240); /* Input azul oscuro sutil */
+  --ring: oklch(0.55 0.06 240); /* Anillo azul medio */
+
+  /* Colores de gráficos (una gama de azules/cianes para el modo oscuro) */
+  --chart-1: oklch(0.48 0.15 250); /* Azul */
+  --chart-2: oklch(0.69 0.1 200); /* Cian azulado */
+  --chart-3: oklch(0.77 0.12 260); /* Azul medio */
+  --chart-4: oklch(0.62 0.18 270); /* Azul profundo */
+  --chart-5: oklch(0.64 0.16 230); /* Azul turquesa */
+
+  /* Sidebar (para el modo oscuro) */
+  --sidebar: oklch(0.18 0.02 240); /* Fondo azul oscuro para sidebar */
+  --sidebar-foreground: oklch(
+    0.95 0.01 240
+  ); /* Texto casi blanco con toque azul */
+  --sidebar-primary: oklch(0.48 0.15 250); /* Azul para elementos primarios */
+  --sidebar-primary-foreground: oklch(0.985 0 0); /* Texto casi blanco */
+  --sidebar-accent: oklch(0.25 0.02 240); /* Azul oscuro para acento */
+  --sidebar-accent-foreground: oklch(
+    0.95 0.01 240
+  ); /* Texto casi blanco con toque azul */
+  --sidebar-border: oklch(0.2 0.02 240); /* Borde azul oscuro sutil */
+  --sidebar-ring: oklch(0.55 0.06 240); /* Anillo azul medio */
 }
 
 @theme inline {

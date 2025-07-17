@@ -32,7 +32,7 @@ export default function ProjectsSection() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <ul className="list-disc ml-4 space-y-1 text-sm group-hover:space-y-2 transition-all duration-300">
+                  <ul className="list-disc ml-4 space-y-1 text-sm transition-all duration-300">
                     {project.description.map((desc, i) => (
                       <motion.li
                         key={i}

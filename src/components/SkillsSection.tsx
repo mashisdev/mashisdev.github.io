@@ -16,7 +16,7 @@ function SkillTag({ skill, index }: { skill: string; index: number }) {
         delay: 0.05 * index,
       }}
       whileHover={{ scale: 1.05, y: -2 }}
-      className="px-3 py-1 bg-muted/80 backdrop-blur-sm rounded-md text-sm border border-purple-500/10 shadow-sm"
+      className="px-3 py-1 rounded-md text-sm border border-blue-500/30 shadow-sm"
     >
       {skill}
     </motion.div>
@@ -58,7 +58,7 @@ export default function SkillsSection() {
         </MotionWrapper>
 
         <motion.div
-          className="space-y-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -80,7 +80,7 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                <span className="mr-2 text-xl">🎨</span> Frontend Development
+                <span className="mr-2 text-xl">🎨</span> Frontend
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.frontendDevelopment.map((skill, index) => (
@@ -119,7 +119,7 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                <span className="mr-2 text-xl">☁️</span> Cloud & DevOps
+                <span className="mr-2 text-xl">♾️</span> Cloud & DevOps
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.cloudAndDevOps.map((skill, index) => (
@@ -129,7 +129,7 @@ export default function SkillsSection() {
             </GlassCard>
           </motion.div>
 
-          <motion.div variants={skillCategoryVariants}>
+          {/* <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
                 <span className="mr-2 text-xl">🧰</span> Tools & Services
@@ -140,7 +140,7 @@ export default function SkillsSection() {
                 ))}
               </div>
             </GlassCard>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>
