@@ -1,14 +1,17 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 
 import react from "@astrojs/react";
 
+const LIVE_URL = "https://mashisdev.github.io";
+
 // https://astro.build/config
 export default defineConfig({
+  site: LIVE_URL,
   vite: {
-      plugins: [tailwindcss()],
+    plugins: [tailwindcss()],
   },
 
-  integrations: [react()]
+  integrations: [react()],
 });
