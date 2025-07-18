@@ -33,9 +33,9 @@ export const education = [
   },
 ];
 export const skills = {
-  programmingLanguages: ["TypeScript", "JavaScript", "Python", "Java"],
-  frontendDevelopment: ["React", "Tailwind CSS", "HTML", "CSS"],
-  backendDevelopment: ["Spring", "Node.js"],
+  programmingLanguages: ["Java", "Python", "TypeScript", "JavaScript"],
+  frontendDevelopment: ["React", "Tailwind", "HTML", "CSS"],
+  backendDevelopment: ["Spring", "Nodejs"],
   databaseAndStorage: ["MySQL", "MongoDB"],
   cloudAndDevOps: ["Git", "Docker"],
   // toolsAndServices: [

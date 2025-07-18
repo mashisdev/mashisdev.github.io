@@ -4,7 +4,51 @@ import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 import { GlassCard } from "./ui/glass-card";
 
+// Logos
+import javaIcon from "../assets/java-logo.svg";
+import pythonIcon from "../assets/python-logo.svg";
+import javascriptIcon from "../assets/javascript-logo.svg";
+import typescriptIcon from "../assets/typescript-logo.svg";
+import mysqlIcon from "../assets/mysql-logo.svg";
+import mongoIcon from "../assets/mongo-logo.svg";
+import springIcon from "../assets/spring-logo.svg";
+import nodejsIcon from "../assets/nodejs-logo.svg";
+import tailwindIcon from "../assets/tailwind-logo.svg";
+import reactIcon from "../assets/react-logo.svg";
+import htmlIcon from "../assets/html-logo.svg";
+import cssIcon from "../assets/css-logo.svg";
+import gitIcon from "../assets/git-logo.svg";
+import dockerIcon from "../assets/docker-logo.svg";
+
+const skillIcons: { [key: string]: any } = {
+  // Programming Languages
+  Java: javaIcon,
+  Python: pythonIcon,
+  TypeScript: typescriptIcon,
+  JavaScript: javascriptIcon,
+
+  // Database and Storage
+  MySQL: mysqlIcon,
+  MongoDB: mongoIcon,
+
+  // Backend
+  Spring: springIcon,
+  Nodejs: nodejsIcon,
+
+  // Frontend
+  Tailwind: tailwindIcon,
+  React: reactIcon,
+  HTML: htmlIcon,
+  CSS: cssIcon,
+
+  // Cloud and DevOps
+  Git: gitIcon,
+  Docker: dockerIcon,
+};
+
 function SkillTag({ skill, index }: { skill: string; index: number }) {
+  const iconSrc = skillIcons[skill];
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
@@ -16,8 +60,16 @@ function SkillTag({ skill, index }: { skill: string; index: number }) {
         delay: 0.05 * index,
       }}
       whileHover={{ scale: 1.05, y: -2 }}
-      className="px-3 py-1 rounded-md text-sm border border-blue-500/30 shadow-sm"
+      className="px-3 py-1 rounded-md text-sm border border-blue-500/30 shadow-sm flex items-center whitespace-nowrap"
     >
+      {iconSrc && (
+        <img
+          src={iconSrc.src}
+          alt={skill}
+          className="w-4 h-4 mr-1 inline-block"
+          style={{ verticalAlign: "middle" }}
+        />
+      )}
       {skill}
     </motion.div>
   );
