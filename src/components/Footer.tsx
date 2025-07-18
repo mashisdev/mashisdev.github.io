@@ -14,7 +14,7 @@ export default function Footer() {
         >
           <motion.p
             className="text-sm text-muted-foreground text-center md:text-left"
-            whileHover={{ scale: 1.01 }}
+            whileHover={{ scale: 1.1 }}
           >
             &copy; {new Date().getFullYear()} {personalInfo.name}. All rights
             reserved.
@@ -23,9 +23,8 @@ export default function Footer() {
             className="text-sm text-muted-foreground mt-2 md:mt-0 text-center md:text-left"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
             viewport={{ once: true }}
-            whileHover={{ scale: 1.01 }}
+            whileHover={{ scale: 1.1 }}
           >
             Built with{" "}
             <motion.span

@@ -22,6 +22,7 @@ import dockerIcon from "../assets/icons/docker-logo.svg";
 import jwtIcon from "../assets/icons/jwt-logo.svg";
 import springSecurityIcon from "../assets/icons/spring-security-logo.svg";
 import junitIcon from "../assets/icons/junit-logo.svg";
+import mockitoIcon from "../assets/icons/mockito-logo.png";
 
 const skillIcons: { [key: string]: any } = {
   // Programming Languages
@@ -44,6 +45,7 @@ const skillIcons: { [key: string]: any } = {
 
   // Testing
   "JUnit 5": junitIcon,
+  Mockito: mockitoIcon,
 
   // Frontend Development
   Tailwind: tailwindIcon,
@@ -161,7 +163,7 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                <span className="mr-2 text-xl">⚙️</span> Backend Development
+                <span className="mr-2 text-xl">🧰</span> Backend Development
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.backendDevelopment.map((skill, index) => (
@@ -174,7 +176,7 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                <span className="mr-2 text-xl">🗄️</span> Database & Storage
+                <span className="mr-2 text-xl">💾</span> Database & Storage
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.databaseAndStorage.map((skill, index) => (
