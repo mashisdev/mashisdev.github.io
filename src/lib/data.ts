@@ -30,12 +30,11 @@ export const education = [
 export const skills = {
   programmingLanguages: ["Java", "Python", "TypeScript", "JavaScript"],
   frontendDevelopment: ["React", "Tailwind", "HTML", "CSS"],
-  backendDevelopment: ["Spring", "Nodejs"],
+  backendDevelopment: ["Spring", "Hibernate"],
   databaseAndStorage: ["MySQL", "MongoDB"],
   cloudAndDevOps: ["Git", "Docker"],
-  // toolsAndServices: [
-  //   "Clerk (Auth)",
-  // ],
+  security: ["Spring Security", "JWT"],
+  testing: ["JUnit 5", "Mockito"],
 };
 
 export const projects = [
@@ -45,6 +44,7 @@ export const projects = [
     description: [
       "A collection of Spring Boot projects demonstrating different user authentication strategies using Spring Security.",
       "This repository serves as a starting point for developers looking to implement secure and scalable authentication in their Spring applications.",
+      "Unit tests with JUnit 5 and Mockito.",
     ],
   },
 ];

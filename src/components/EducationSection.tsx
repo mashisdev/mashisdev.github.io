@@ -64,7 +64,7 @@ export default function EducationSection() {
                         className="text-muted-foreground relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:rounded-full before:bg-blue-500"
                         initial={{ opacity: 0, x: -10 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.3, delay: 0.8 + 0.25 * i }}
+                        transition={{ duration: 0.3, delay: 0.8 + 0.2 * i }}
                         viewport={{ once: true }}
                       >
                         {achievement}

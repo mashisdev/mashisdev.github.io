@@ -70,15 +70,6 @@ export default function HeroSection() {
               className="flex flex-col gap-2 items-center md:items-start"
               variants={containerVariants}
             >
-              <motion.div
-                className="flex items-center text-sm text-muted-foreground"
-                variants={childVariants}
-                whileHover={{ scale: 1.05, color: "#4b5563" }}
-              >
-                <MapPin className="h-4 w-4 mr-2" />
-                {personalInfo.location}
-              </motion.div>
-
               <motion.a
                 href={`mailto:${personalInfo.email}`}
                 className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -112,6 +103,15 @@ export default function HeroSection() {
                 <Linkedin className="h-4 w-4 mr-2" />
                 LinkedIn
               </motion.a>
+
+              <motion.div
+                className="flex items-center text-sm text-muted-foreground"
+                variants={childVariants}
+                whileHover={{ scale: 1.05, color: "#4b5563" }}
+              >
+                <MapPin className="h-4 w-4 mr-2" />
+                {personalInfo.location}
+              </motion.div>
             </motion.div>
           </div>
         </motion.div>
@@ -122,12 +122,12 @@ export default function HeroSection() {
               <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-blue-500 to-cyan-500 rounded-full"></span>
               I'm a <strong>Java Backend Developer</strong> with a solid
               foundation in designing and building RESTful APIs. Passionate
-              about good development practices, clean code, the "code as
-              documentation" philosophy, and green coding. Seeking my first
-              professional opportunity to apply my knowledge in challenging
-              projects and collaborate in a learning and growth-oriented
-              environment. My focus is on writing efficient, maintainable, and
-              sustainable code. 🌱
+              about good development practices, clean code, the{" "}
+              <i>"code as documentation"</i> philosophy and green coding 🌱.
+              Seeking my first professional opportunity to apply my knowledge in
+              challenging projects and collaborate in a learning and
+              growth-oriented environment. My focus is on writing efficient,
+              maintainable, and sustainable code 🌐
             </p>
           </div>
         </MotionWrapper>

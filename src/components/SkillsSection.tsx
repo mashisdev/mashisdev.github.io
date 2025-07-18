@@ -12,13 +12,16 @@ import typescriptIcon from "../assets/icons/typescript-logo.svg";
 import mysqlIcon from "../assets/icons/mysql-logo.svg";
 import mongoIcon from "../assets/icons/mongo-logo.svg";
 import springIcon from "../assets/icons/spring-logo.svg";
-import nodejsIcon from "../assets/icons/nodejs-logo.svg";
+import hibernateIcon from "../assets/icons/hibernate-logo.svg";
 import tailwindIcon from "../assets/icons/tailwind-logo.svg";
 import reactIcon from "../assets/icons/react-logo.svg";
 import htmlIcon from "../assets/icons/html-logo.svg";
 import cssIcon from "../assets/icons/css-logo.svg";
 import gitIcon from "../assets/icons/git-logo.svg";
 import dockerIcon from "../assets/icons/docker-logo.svg";
+import jwtIcon from "../assets/icons/jwt-logo.svg";
+import springSecurityIcon from "../assets/icons/spring-security-logo.svg";
+import junitIcon from "../assets/icons/junit-logo.svg";
 
 const skillIcons: { [key: string]: any } = {
   // Programming Languages
@@ -31,11 +34,18 @@ const skillIcons: { [key: string]: any } = {
   MySQL: mysqlIcon,
   MongoDB: mongoIcon,
 
-  // Backend
+  // Backend Development
   Spring: springIcon,
-  Nodejs: nodejsIcon,
+  Hibernate: hibernateIcon,
 
-  // Frontend
+  // Security
+  JWT: jwtIcon,
+  "Spring Security": springSecurityIcon,
+
+  // Testing
+  "JUnit 5": junitIcon,
+
+  // Frontend Development
   Tailwind: tailwindIcon,
   React: reactIcon,
   HTML: htmlIcon,
@@ -138,7 +148,7 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                <span className="mr-2 text-xl">🎨</span> Frontend
+                <span className="mr-2 text-xl">🎨</span> Frontend Development
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.frontendDevelopment.map((skill, index) => (
@@ -187,18 +197,31 @@ export default function SkillsSection() {
             </GlassCard>
           </motion.div>
 
-          {/* <motion.div variants={skillCategoryVariants}>
+          <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                <span className="mr-2 text-xl">🧰</span> Tools & Services
+                <span className="mr-2 text-xl">🔐</span> Security
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-                {skills.toolsAndServices.map((skill, index) => (
+                {skills.security.map((skill, index) => (
                   <SkillTag key={skill} skill={skill} index={index} />
                 ))}
               </div>
             </GlassCard>
-          </motion.div> */}
+          </motion.div>
+
+          <motion.div variants={skillCategoryVariants}>
+            <GlassCard className="p-4">
+              <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
+                <span className="mr-2 text-xl">⚙️</span> Testing
+              </h3>
+              <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                {skills.testing.map((skill, index) => (
+                  <SkillTag key={skill} skill={skill} index={index} />
+                ))}
+              </div>
+            </GlassCard>
+          </motion.div>
         </motion.div>
       </div>
     </section>
