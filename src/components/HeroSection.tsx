@@ -118,7 +118,7 @@ export default function HeroSection() {
 
         <MotionWrapper>
           <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 backdrop-blur-sm backdrop-filter p-4 rounded-lg border border-blue-500/20 dark:border-blue-500/10 shadow-sm">
-            <p className="text-muted-foreground pl-4 py-2 mb-4 relative">
+            <p className="text-muted-foreground pl-4 py-2 relative">
               <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-blue-500 to-cyan-500 rounded-full"></span>
               I'm a <strong>Java Backend Developer</strong> with a solid
               foundation in designing and building RESTful APIs. Passionate

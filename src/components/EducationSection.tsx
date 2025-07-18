@@ -33,15 +33,16 @@ export default function EducationSection() {
 
               {edu.achievements && edu.achievements.length > 0 && (
                 <motion.div
-                  className="mt-3 p-4 bg-background/80 backdrop-blur-sm backdrop-filter rounded-lg border border-purple-500/20 dark:bg-card/10 dark:border-purple-500/10 shadow-sm"
+                  className="mt-3 p-4 bg-background/80 backdrop-blur-sm backdrop-filter rounded-lg border border-blue-500/20 dark:bg-card/10 dark:border-blue-500/10 shadow-sm" // Cambiado de purple-500 a blue-500
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                   viewport={{ once: true }}
                 >
                   <div className="flex items-center mb-3">
-                    <div className="h-6 w-6 flex items-center justify-center rounded-full bg-purple-500/10 mr-2">
-                      <Award className="h-4 w-4 text-purple-500" />
+                    <div className="h-6 w-6 flex items-center justify-center rounded-full bg-blue-500/10 mr-2">
+                      {" "}
+                      <Award className="h-4 w-4 text-blue-500" />
                     </div>
                     <h4 className="text-sm font-medium">
                       ✨ Achievements & Activities
@@ -51,7 +52,7 @@ export default function EducationSection() {
                     {edu.achievements.map((achievement, i) => (
                       <motion.li
                         key={i}
-                        className="text-muted-foreground relative pl-6"
+                        className="text-muted-foreground relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:rounded-full before:bg-blue-500"
                         initial={{ opacity: 0, x: -10 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.3, delay: 0.1 * i }}
