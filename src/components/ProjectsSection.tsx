@@ -39,7 +39,7 @@ export default function ProjectsSection() {
                         className="text-muted-foreground"
                         initial={{ opacity: 0, x: -10 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ delay: i * 0.1 }}
+                        transition={{ delay: 0.5 + i * 0.2 }}
                         viewport={{ once: true }}
                       >
                         {desc}

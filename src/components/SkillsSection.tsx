@@ -5,20 +5,20 @@ import MotionWrapper from "./MotionWrapper";
 import { GlassCard } from "./ui/glass-card";
 
 // Logos
-import javaIcon from "../assets/java-logo.svg";
-import pythonIcon from "../assets/python-logo.svg";
-import javascriptIcon from "../assets/javascript-logo.svg";
-import typescriptIcon from "../assets/typescript-logo.svg";
-import mysqlIcon from "../assets/mysql-logo.svg";
-import mongoIcon from "../assets/mongo-logo.svg";
-import springIcon from "../assets/spring-logo.svg";
-import nodejsIcon from "../assets/nodejs-logo.svg";
-import tailwindIcon from "../assets/tailwind-logo.svg";
-import reactIcon from "../assets/react-logo.svg";
-import htmlIcon from "../assets/html-logo.svg";
-import cssIcon from "../assets/css-logo.svg";
-import gitIcon from "../assets/git-logo.svg";
-import dockerIcon from "../assets/docker-logo.svg";
+import javaIcon from "../assets/icons/java-logo.svg";
+import pythonIcon from "../assets/icons/python-logo.svg";
+import javascriptIcon from "../assets/icons/javascript-logo.svg";
+import typescriptIcon from "../assets/icons/typescript-logo.svg";
+import mysqlIcon from "../assets/icons/mysql-logo.svg";
+import mongoIcon from "../assets/icons/mongo-logo.svg";
+import springIcon from "../assets/icons/spring-logo.svg";
+import nodejsIcon from "../assets/icons/nodejs-logo.svg";
+import tailwindIcon from "../assets/icons/tailwind-logo.svg";
+import reactIcon from "../assets/icons/react-logo.svg";
+import htmlIcon from "../assets/icons/html-logo.svg";
+import cssIcon from "../assets/icons/css-logo.svg";
+import gitIcon from "../assets/icons/git-logo.svg";
+import dockerIcon from "../assets/icons/docker-logo.svg";
 
 const skillIcons: { [key: string]: any } = {
   // Programming Languages
@@ -59,8 +59,14 @@ function SkillTag({ skill, index }: { skill: string; index: number }) {
         damping: 20,
         delay: 0.05 * index,
       }}
-      whileHover={{ scale: 1.05, y: -2 }}
-      className="px-3 py-1 rounded-md text-sm border border-blue-500/30 shadow-sm flex items-center whitespace-nowrap"
+      whileHover={{
+        scale: 1.05,
+        y: -2,
+        borderColor: "#3B82F6",
+        color: "#3B82F6",
+      }}
+      className="px-3 py-1 rounded-md text-sm border border-blue-500/30 shadow-sm flex items-center whitespace-nowrap
+                 bg-background/80 text-foreground transition-all duration-50 ease-in-out hover:shadow-lg"
     >
       {iconSrc && (
         <img

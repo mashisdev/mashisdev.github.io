@@ -1,3 +1,6 @@
+import platziIcon from "../assets/education/platzi.svg";
+import aprendeIcon from "../assets/education/buenos-aires-aprende.png";
+
 export const personalInfo = {
   name: "Manuel Schaller",
   location: "Buenos Aires, Argentina",
@@ -9,27 +12,19 @@ export const personalInfo = {
 export const education = [
   {
     institution: "Platzi",
-    location: "Coimbatore, India",
-    degree: "B Tech Information Technology",
-    period: "Jun 2021 - Jun 2025",
-    achievements: [
-      "President of the Department of Information Technology",
-      "G20 student delegate",
-      "Organized multiple technical workshops and events",
-      "Represented my college in multiple national and international hackathons and won.",
-    ],
+    icon: platziIcon,
+    location: "",
+    degree: "Backend con Java",
+    period: "Jan - April 2025",
+    achievements: ["Java SE", "Spring", "Spring Security", "Spring Data JPA"],
   },
   {
     institution: "Agencia de Habilidades para el Futuro",
-    location: "Buenos Aires, Argentina",
-    degree: "B Tech Information Technology",
-    period: "Jun 2021 - Jun 2025",
-    achievements: [
-      "President of the Department of Information Technology",
-      "G20 student delegate",
-      "Organized multiple technical workshops and events",
-      "Represented my college in multiple national and international hackathons and won.",
-    ],
+    icon: aprendeIcon,
+    location: "",
+    degree: "Back-End Java",
+    period: "Mar - Jul 2025",
+    achievements: ["Java SE", "Spring Boot"],
   },
 ];
 export const skills = {
@@ -45,14 +40,11 @@ export const skills = {
 
 export const projects = [
   {
-    title: "Spring Security Templates",
-    github: "https://github.com/rishikesh2003/Prodigi",
+    title: "🔒 Spring Security Templates",
+    github: "https://github.com/mashisdev/spring-security-templates",
     description: [
-      "WiFi-RTT: Developed indoor occupancy tracking for energy optimization.",
-      "IoT Solutions: Implemented smart monitoring for energy efficiency and food waste reduction.",
-      "Real-Time Tracking: Designed systems to monitor carbon emissions and optimize resources.",
-      "Data-Driven Insights: Analyzed user patterns for adaptive energy and food management.",
-      "Reward Integration: Built QR-based green points system to incentivize eco-friendly actions.",
+      "A collection of Spring Boot projects demonstrating different user authentication strategies using Spring Security.",
+      "This repository serves as a starting point for developers looking to implement secure and scalable authentication in their Spring applications.",
     ],
   },
 ];

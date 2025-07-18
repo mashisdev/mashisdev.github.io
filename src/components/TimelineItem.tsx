@@ -6,6 +6,7 @@ interface TimelineItemProps {
   title: string;
   subtitle: string;
   date: string;
+  icon?: { src: string };
   isLast?: boolean;
   index?: number;
   children?: React.ReactNode;
@@ -15,6 +16,7 @@ export default function TimelineItem({
   title,
   subtitle,
   date,
+  icon,
   isLast = false,
   index = 0,
   children,
@@ -58,8 +60,16 @@ export default function TimelineItem({
           transition={{ duration: 0.5, delay: index * 0.2 + 0.1 }}
           viewport={{ once: true, margin: "-50px" }}
         >
-          <h3 className="font-medium">{title}</h3>
-          <p className="text-sm text-muted-foreground">{subtitle}</p>
+          <h3 className="font-medium flex items-center mb-2">
+            {icon && (
+              <img
+                src={icon.src}
+                alt="Institution icon"
+                className="mr-2 inline-block h-5 w-5"
+              />
+            )}
+            {title}
+          </h3>
           <p className="text-xs text-muted-foreground/70 mb-2">{date}</p>
         </motion.div>
         <motion.div
