@@ -1,13 +1,47 @@
 import ThemeToggle from "./ui/theme-toggle";
 import { personalInfo } from "@/lib/data";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import mainLogo from "@/assets/main-logo.png";
+import mainDarkLogo from "@/assets/main-logo-dark.png";
 
 export default function GlassHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const [currentLogoSrc, setCurrentLogoSrc] = useState(mainLogo);
+
+  const updateLogoBasedOnTheme = () => {
+    if (document.documentElement.classList.contains("dark")) {
+      setCurrentLogoSrc(mainDarkLogo);
+    } else {
+      setCurrentLogoSrc(mainLogo);
+    }
+  };
+
+  useEffect(() => {
+    // Al montar el componente, establece el logo inicial
+    updateLogoBasedOnTheme();
+
+    // Observa cambios en el atributo 'class' del <html> para reaccionar a cambios de tema
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (
+          mutation.type === "attributes" &&
+          mutation.attributeName === "class"
+        ) {
+          updateLogoBasedOnTheme();
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, { attributes: true });
+
+    // Limpieza al desmontar el componente
+    return () => observer.disconnect();
+  }, []); // Se ejecuta solo una vez al montar
 
   return (
     <header className="sticky z-50 w-full backdrop-blur-md backdrop-filter bg-background/70 dark:bg-background/40 border-b border-border/40 supports-[backdrop-filter]:bg-background/60">
@@ -15,10 +49,14 @@ export default function GlassHeader() {
         <motion.a
           className="flex items-center text-lg font-medium"
           href="/"
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
-          {personalInfo.name}
+          <img
+            src={currentLogoSrc.src}
+            alt="Main Logo"
+            className="h-16 w-auto"
+          />
         </motion.a>
 
         {/* Desktop Navigation */}
