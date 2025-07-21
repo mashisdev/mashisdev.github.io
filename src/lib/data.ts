@@ -42,9 +42,10 @@ export const projects = [
     title: "🔒 Spring Security Templates",
     github: "https://github.com/mashisdev/spring-security-templates",
     description: [
-      "A collection of Spring Boot projects demonstrating different user authentication strategies using Spring Security.",
-      "This repository serves as a starting point for developers looking to implement secure and scalable authentication in their Spring applications.",
-      "Unit tests with JUnit 5 and Mockito.",
+      "A collection of production-ready Spring Security templates demonstrating various authentication strategies.",
+      "Includes robust implementations for basic authentication with JWT, Role-Based Access Control (RBAC), and OAuth 2.0 integrations with GitHub and Google.",
+      "Features global exception handling using @RestControllerAdvice for consistent error management across the application.",
+      "Comprehensive test coverage with JUnit 5 and Mockito for repositories, services, and controllers, ensuring reliability and maintainability.",
     ],
   },
 ];

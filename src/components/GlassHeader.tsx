@@ -55,7 +55,7 @@ export default function GlassHeader() {
           <img
             src={currentLogoSrc.src}
             alt="Main Logo"
-            className="h-16 w-auto"
+            className="h-10 w-auto"
           />
         </motion.a>
 
