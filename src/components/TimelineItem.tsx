@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 interface TimelineItemProps {
   title: string;
-  subtitle: string;
   date: string;
   icon?: { src: string };
   isLast?: boolean;
@@ -14,7 +13,6 @@ interface TimelineItemProps {
 
 export default function TimelineItem({
   title,
-  subtitle,
   date,
   icon,
   isLast = false,

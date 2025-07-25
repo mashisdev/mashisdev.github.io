@@ -14,17 +14,35 @@ export const education = [
     institution: "Platzi",
     icon: platziIcon,
     location: "",
-    degree: "Backend con Java",
     period: "Jan - April 2025",
-    achievements: ["Java SE", "Spring", "Spring Security", "Spring Data JPA"],
+    courses: [
+      {
+        degree: "Backend con Java",
+        achievements: [
+          "Java SE",
+          "Spring",
+          "Spring Security",
+          "Spring Data JPA",
+        ],
+      },
+      {
+        degree: "Seguridad Web & API",
+        achievements: ["OAuth 2.0", "OpenID Connect", "OWASP Top 10"],
+      },
+    ],
   },
   {
     institution: "Agencia de Habilidades para el Futuro",
     icon: aprendeIcon,
     location: "",
-    degree: "Back-End Java",
     period: "Mar - Jul 2025",
-    achievements: ["Java SE", "Spring Boot"],
+    courses: [
+      {
+        degree: "Back-End Java",
+        period: "Mar - Jul 2025",
+        achievements: ["Java SE", "Spring Boot"],
+      },
+    ],
   },
 ];
 export const skills = {
