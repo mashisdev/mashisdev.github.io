@@ -63,8 +63,10 @@ export const projects = [
     description: [
       "A collection of production-ready Spring Security templates demonstrating various authentication strategies.",
       "Includes robust implementations for basic authentication with JWT, Role-Based Access Control (RBAC), and OAuth 2.0 integrations with GitHub and Google.",
-      "Global exception handling for consistent error management across the application and logging with SLF4J for easy debugging.",
-      "Comprehensive test coverage with JUnit 5 and Mockito for repositories, services and controllers, ensuring reliability and maintainability.",
+      "Global exception handling for consistent error management across the application and logging with Slf4j for easy debugging.",
+      "Swagger documentation for API endpoints, making it easy to understand and consume.",
+      "Rate Limiter for preventing brute-force attacks and ensuring security with Resilience4j.",
+      "Test coverage with JUnit 5 and Mockito for repositories, services and controllers, ensuring reliability and maintainability.",
     ],
   },
 ];
