@@ -7,6 +7,7 @@ export const personalInfo = {
   email: "mashisdev@gmail.com",
   github: "https://github.com/mashisdev",
   linkedin: "https://www.linkedin.com/in/manuel-schaller/",
+  medium: "https://medium.com/@mashisdev",
 };
 
 export const education = [
