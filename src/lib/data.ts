@@ -62,11 +62,20 @@ export const projects = [
     github: "https://github.com/mashisdev/spring-security-templates",
     description: [
       "A collection of production-ready Spring Security templates demonstrating various authentication strategies.",
-      "Includes robust implementations for basic authentication with JWT, Role-Based Access Control (RBAC), and OAuth 2.0 integrations with GitHub and Google.",
-      "Global exception handling for consistent error management across the application and logging with Slf4j for easy debugging.",
-      "Swagger documentation for API endpoints, making it easy to understand and consume.",
-      "Rate Limiter for preventing brute-force attacks and ensuring security with Resilience4j.",
+      "Includes robust implementations for basic authentication with JWT, Role-Based Access Control (RBAC), OTP and OAuth 2.0 integrations with GitHub and Google.",
+      "Documentation with Swagger, logging with Slf4j, Global exception handling for error management & Rate Limiter with Resilience4j.",
       "Test coverage with JUnit 5 and Mockito for repositories, services and controllers, ensuring reliability and maintainability.",
+    ],
+  },
+  {
+    title: "🛒 E-commerce Backend",
+    github: "https://github.com/mashisdev/ecommerce-backend",
+    description: [
+      "A comprehensive backend API for an e-commerce platform built with Spring Framework.",
+      "Implements a robust domain model with entities like UserProduct, Category, Brand, Address and Order, showcasing relationships and business logic.",
+      "Performs advanced search and pagination functionalities, allowing efficient and specific data retrieval from the database.",
+      "Role-Based Access Control (RBAC) with UNVERIFIED_USER, USER and ADMIN roles. User verification with OTP send by email.",
+      "Documentation with Swagger, logging with Slf4j, Rate Limiter with Resilience4j.",
     ],
   },
 ];
