@@ -66,7 +66,7 @@ export default function EducationSection() {
                       </div>
                       {course.achievements &&
                         course.achievements.length > 0 && (
-                          <ul className="list-none ml-4 space-y-2 text-sm">
+                          <ul className="list-none space-y-2 text-sm pl-2">
                             {course.achievements.map((achievement, i) => (
                               <motion.li
                                 key={i}

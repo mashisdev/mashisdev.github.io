@@ -132,14 +132,12 @@ export default function HeroSection() {
           <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 backdrop-blur-sm backdrop-filter p-4 rounded-lg border border-blue-500/20 dark:border-blue-500/10 shadow-sm">
             <p className="text-muted-foreground pl-4 py-2 relative">
               <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-blue-500 to-cyan-500 rounded-full"></span>
-              I'm a <strong>Java Backend Developer</strong> with a solid
-              foundation in designing and building RESTful APIs. Passionate
-              about good development practices, clean code, the{" "}
-              <i>"code as documentation"</i> philosophy and green coding 🌱.
-              Seeking my first professional opportunity to apply my knowledge in
-              challenging projects and collaborate in a learning and
-              growth-oriented environment. My focus is on writing efficient,
-              maintainable, and sustainable code 🌐
+              I am a college student and backend developer with{" "}
+              <strong>freelance experience</strong> looking for my next
+              professional opportunity to apply my skills in challenging
+              projects and collaborate in a learning and{" "}
+              <strong>growth oriented environment</strong>. My focus is on
+              writing <i>efficient, maintainable and sustainable code</i> 🌱🌐.
             </p>
           </div>
         </MotionWrapper>

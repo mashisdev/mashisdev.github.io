@@ -17,7 +17,7 @@ export default function ExperienceSection() {
               className="inline-block mr-2"
               initial={{ rotate: 0 }}
               whileInView={{ rotate: [0, -10, 10, -5, 5, 0] }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.5, delay: 2 }}
               viewport={{ once: true }}
             >
               💼
@@ -30,37 +30,33 @@ export default function ExperienceSection() {
             <TimelineItem
               key={job.company + job.period}
               title={`👨‍💻 ${job.position} | ${job.company}`}
-              subtitle={`🌍 ${job.location}`}
               date={`📅 ${job.period}`}
               isLast={index === workExperience.length - 1}
               index={index}
             >
               <motion.div
-                className="mt-3 p-4 bg-background/80 backdrop-blur-sm backdrop-filter rounded-lg border border-purple-500/20 dark:bg-card/10 dark:border-purple-500/10 shadow-sm"
+                className="mt-3 p-4 bg-background/80 backdrop-blur-sm backdrop-filter rounded-lg border border-blue-500/20 dark:bg-card/10 dark:border-blue-500/10 shadow-sm"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <div className="flex items-center mb-3">
-                  <div className="h-6 w-6 flex items-center justify-center rounded-full bg-purple-500/10 mr-2">
-                    <Briefcase className="h-4 w-4 text-purple-500" />
+                <div className="flex items-center mb-2">
+                  <div className="h-6 w-6 flex items-center justify-center rounded-full bg-blue-500/10 mr-2">
+                    <Briefcase className="h-4 w-4 text-blue-500" />
                   </div>
-                  <h4 className="text-sm font-medium">Key Achievements</h4>
+                  <h4 className="text-sm font-medium">Key Contributions</h4>
                 </div>
-                <ul className="list-none ml-4 space-y-2 text-sm">
-                  {job.achievements.map((achievement, i) => (
-                    <motion.li
-                      key={i}
-                      className="text-muted-foreground relative pl-6"
-                      initial={{ opacity: 0, x: -10 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.3, delay: 0.1 * i }}
-                      viewport={{ once: true }}
-                    >
-                      {achievement}
-                    </motion.li>
-                  ))}
+                <ul className="list-none space-y-2 pl-8 text-sm">
+                  <motion.p
+                    className="text-muted-foreground relative text-sm"
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: 0.1 }}
+                    viewport={{ once: true }}
+                  >
+                    {job.achievements}
+                  </motion.p>
                 </ul>
               </motion.div>
             </TimelineItem>
