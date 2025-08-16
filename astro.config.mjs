@@ -6,6 +6,8 @@ import react from "@astrojs/react";
 
 import sitemap from "@astrojs/sitemap";
 
+import partytown from "@astrojs/partytown";
+
 const LIVE_URL = "https://mashisdev.github.io";
 
 // https://astro.build/config
@@ -15,5 +17,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  integrations: [react(), sitemap()],
+  integrations: [react(), sitemap(), partytown()],
 });
