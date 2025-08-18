@@ -42,7 +42,7 @@ export default function ProjectsSection() {
                         transition={{ delay: 0.4 + i * 0.2 }}
                         viewport={{ once: true }}
                       >
-                        {desc}
+                        <span dangerouslySetInnerHTML={{ __html: desc }} />
                       </motion.li>
                     ))}
                   </ul>
