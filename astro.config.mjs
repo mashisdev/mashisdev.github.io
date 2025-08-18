@@ -20,19 +20,6 @@ export default defineConfig({
   integrations: [
     react(),
     sitemap(),
-    partytown({
-      config: {
-        forward: ["dataLayer.push"],
-        resolveUrl: (url, location, type) => {
-          if (url.hostname === "www.googletagmanager.com") {
-            return new URL(
-              url.pathname + url.search,
-              "https://www.googletagmanager.com"
-            );
-          }
-          return url;
-        },
-      },
-    }),
+    partytown({ config: { forward: ["dataLayer.push"] } }),
   ],
 });
