@@ -78,12 +78,10 @@ const absoluteOgImage = new URL(ogImage, Astro.site).href;
     <meta name="google-site-verification" content="FxIU7CCsVJ7wL9CQsl_YNR_c7_o1AkBvfx528QqTZKs" />
 
     <!-- Google tag (gtag.js) -->
-    <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-MBPQX9ZJXF"></script>
     <script type="text/partytown">
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag(){ dataLayer.push(arguments); }
       gtag('js', new Date());
-
       gtag('config', 'G-MBPQX9ZJXF');
     </script>
 
